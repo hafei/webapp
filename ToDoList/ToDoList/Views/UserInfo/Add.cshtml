@@ -1,0 +1,16 @@
+﻿@model Entity.UserInfo
+
+@{
+    ViewBag.Title = "title";
+    //Layout = "_Layout";
+}
+
+<h2>title</h2>
+<form action="/UserInfo/Add" method="post">
+    @Html.TextBoxFor(m => m.UserName)
+    @Html.TextBoxFor(m => m.Age)
+    <input type="submit" value="Submit" />
+</form>
+
+
+

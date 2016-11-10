@@ -1,0 +1,15 @@
+﻿@model List<Entity.UserInfo>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@*@Html.Action("Add", "UserInfo")*@
+@Html.ActionLink("新增", "Add")
+    @foreach (var item in Model)
+    {
+        <div>
+            @Html.Label(item.UserName)
+        </div>
+    }
