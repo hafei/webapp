@@ -18,7 +18,7 @@ namespace WebApp.Areas.ComManage
                 "ComManage_default",
                 "Com/{controller}/{action}/{id}",
                 new { action = "Index", id = UrlParameter.Optional },
-                new string[] { "WebPage.Areas.ComManage.Controllers" }
+                new string[] { "WebApp.Areas.ComManage.Controllers" }
             );
         }
     }

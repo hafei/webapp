@@ -18,7 +18,7 @@ namespace WebApp.Areas.SysManage
                 "SysManage_default",
                 "Sys/{controller}/{action}/{id}",
                 new { action = "Index", id = UrlParameter.Optional },
-                new string[] { "WebPage.Areas.SysManage.Controllers" }
+                new string[] { "WebApp.Areas.SysManage.Controllers" }
             );
         }
     }
