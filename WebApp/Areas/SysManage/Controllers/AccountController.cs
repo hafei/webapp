@@ -12,8 +12,10 @@ namespace WebApp.Areas.SysManage.Controllers
     public class AccountController : Controller
     {
 
-        #region 生命容器
-        IUserManage UserManage; 
+        #region 声明容器
+        IUserManage UserManage;
+
+        log4net.Ext.IExtLog log = log4net.Ext.ExtLogManager.GetLogger("dblog");
         #endregion
 
         // GET: SysManage/Account
@@ -41,6 +43,7 @@ namespace WebApp.Areas.SysManage.Controllers
                     if (users.ISCANLOGIN == 1)
                     {
                         json.Msg = "用户已锁定，禁止登录，请联系管理员进行解锁";
+                        //log4net.
                         return Json(json);
                     }
                     json.Status = "y";
