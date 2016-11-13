@@ -54,7 +54,55 @@
   <ItemGroup>
     <Compile Include="MyConfig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SYS_CODE.cs">
+      <DependentUpon>WebDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYS_CODE_AREA.cs">
+      <DependentUpon>WebDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYS_DEPARTMENT.cs">
+      <DependentUpon>WebDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYS_LOG.cs">
+      <DependentUpon>WebDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYS_MODULE.cs">
+      <DependentUpon>WebDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYS_PERMISSION.cs">
+      <DependentUpon>WebDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYS_POST.cs">
+      <DependentUpon>WebDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYS_POST_DEPARTMENT.cs">
+      <DependentUpon>WebDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYS_POST_USER.cs">
+      <DependentUpon>WebDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYS_ROLE.cs">
+      <DependentUpon>WebDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYS_ROLE_PERMISSION.cs">
+      <DependentUpon>WebDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYS_SYSTEM.cs">
+      <DependentUpon>WebDB.tt</DependentUpon>
+    </Compile>
     <Compile Include="SYS_USER.cs">
+      <DependentUpon>WebDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYS_USERINFO.cs">
+      <DependentUpon>WebDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYS_USER_DEPARTMENT.cs">
+      <DependentUpon>WebDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYS_USER_PERMISSION.cs">
+      <DependentUpon>WebDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYS_USER_ROLE.cs">
       <DependentUpon>WebDB.tt</DependentUpon>
     </Compile>
     <Compile Include="WebDB.Context.cs">
